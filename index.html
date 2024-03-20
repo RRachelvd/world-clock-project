@@ -10,11 +10,17 @@
     <link
       src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poly:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
-      <h1>World clocks</h1>
+      <h1>World clock</h1>
       <select>
         <option value="">Select a city</option>
         <option>city 1</option>
@@ -22,32 +28,39 @@
         <option>city 3</option>
       </select>
       <div class="city">
-        <h2>Los Angeles</h2>
-        <div class="date">August 20th 2023</div>
-        <div class="time">18:05</div>
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date">August 20th 2023</div>
+        </div>
+        <div>
+          <div class="time">06:05 <small>AM</small></div>
+        </div>
       </div>
       <div class="city">
-        <h2>Amsterdam</h2>
-        <div class="date">August 20th 2023</div>
-        <div class="time">18:05</div>
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date">August 20th 2023</div>
+        </div>
+        <div>
+          <div class="time">06:05 <small>AM</small></div>
+        </div>
       </div>
-      <footer>
-        Coded by
-        <a href="https://github.com/RRachelvd" target="_blank">
-          Rachèl van Dijkhorst</a
-        >, open-sourced on
-        <a
-          href="https://github.com/RRachelvd/world-clock-project"
-          target="_blank"
-          >Github</a
-        >
-
-        and hosted on
-        <a href="https://world-clock-by-rachel.netlify.app/" target="_blank"
-          >Netlify</a
-        >
-      </footer>
     </div>
+    <footer>
+      Coded by
+      <a href="https://github.com/RRachelvd" target="_blank">
+        Rachèl van Dijkhorst</a
+      >, open-sourced on
+      <a href="https://github.com/RRachelvd/world-clock-project" target="_blank"
+        >Github</a
+      >
+
+      and hosted on
+      <a href="https://world-clock-by-rachel.netlify.app/" target="_blank"
+        >Netlify</a
+      >
+    </footer>
+
     <script src="javascript/index.js"></script>
   </body>
 </html>
