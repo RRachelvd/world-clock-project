@@ -1,31 +1,24 @@
 body {
-  background-color: lightcyan;
-  font-family: "Poly", serif;
+  background-color: darkgoldenrod;
+  font-family: "Roboto mono", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
 h1 {
   text-align: center;
-  font-size: 40px;
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-}
-
-footer {
-  text-align: center;
-  font-family: monospace;
-  padding-top: 20px;
+  font-size: 48px;
+  font-weight: 800;
 }
 
 .container {
   max-width: 600px;
   text-align: center;
-  margin: 20px auto;
-  background-color: white;
+  margin: 30px auto;
+  background-color: whitesmoke;
   border: 1px solid darkblue;
-  padding: 10px 35px 30px 35px;
-  border-radius: 15px;
+  padding: 10px 40px 30px 40px;
+  border-radius: 6px;
   box-shadow: 18px 17px 23px rgba(47, 37, 37, 0.5);
 }
 
@@ -36,6 +29,7 @@ select {
   border-radius: 4px;
   margin: 0 auto 25px auto;
   font-size: 17px;
+  background-color: whitesmoke;
 }
 
 h2 {
@@ -47,9 +41,10 @@ h2 {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 10px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-  padding: 15px;
+  padding-bottom: 15px;
+  padding-top: 5px;
 }
 
 .city:last-child {
@@ -70,52 +65,18 @@ h2 {
 .time small {
   vertical-align: middle;
   font-size: 18px;
+  margin-left: 8px;
 }
 
-.merriweather-light {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: normal;
+a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.merriweather-regular {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.merriweather-bold {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.merriweather-black {
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.merriweather-light-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.merriweather-regular-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.merriweather-bold-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.merriweather-black-italic {
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-style: italic;
+footer {
+  text-align: center;
+  font-family: monospace;
+  padding-top: 20px;
+  color: whitesmoke;
+  font-size: 15px;
 }
