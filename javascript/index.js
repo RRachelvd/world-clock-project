@@ -41,9 +41,9 @@ function updateCity(event) {
   let cityTime = moment()
     .tz(cityTimezone)
     .format(`h:mm:ss[<small>]A[</small>]`);
-  let citiesElement = document.querySelector("#cities");
+  let selectedCityElement = document.querySelector("#selected-city");
 
-  citiesElement.innerHTML += ` 
+  selectedCityElement.innerHTML = ` 
   <div class="city">
     <div>
       <h2 class="city-option">${cityName}</h2>
@@ -53,6 +53,9 @@ function updateCity(event) {
       <div class="time">${cityTime}</div>
     </div>
           `;
+  setTimeout(() => {
+    updateCity(event);
+  }, 1000);
 }
 
 updateTime();
