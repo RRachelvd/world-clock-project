@@ -59,6 +59,8 @@ h2 {
   text-align: left;
   margin-top: 40px;
   margin-bottom: 0;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .date {
@@ -76,6 +78,10 @@ h2 {
   vertical-align: middle;
   font-size: 18px;
   margin-left: 8px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 a {
