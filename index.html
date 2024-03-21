@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
-    />
-    <link
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"
-    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Molengo&family=Poly:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -29,18 +26,18 @@
         <option>city 2</option>
         <option>city 3</option>
       </select>
-      <div class="city">
+      <div class="city" id="los-angeles">
         <div>
-          <h2>Los Angeles</h2>
+          <h2 class="city-option">Los Angeles</h2>
           <div class="date">August 20th 2023</div>
         </div>
         <div>
           <div class="time">06:05<small>AM</small></div>
         </div>
       </div>
-      <div class="city">
+      <div class="city" id="paris">
         <div>
-          <h2>Los Angeles</h2>
+          <h2 class="city-option">Paris</h2>
           <div class="date">August 20th 2023</div>
         </div>
         <div>
