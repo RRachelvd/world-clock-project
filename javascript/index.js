@@ -37,22 +37,22 @@ function updateCity(event) {
   }
 
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
-  let cityTime = moment().tz(cityTimezone);
+  let cityDate = moment().tz(cityTimezone).format("MMMM Do YYYY");
+  let cityTime = moment()
+    .tz(cityTimezone)
+    .format(`h:mm:ss[<small>]A[</small>]`);
   let citiesElement = document.querySelector("#cities");
 
-  citiesElement.innerHTML += ` <div class="city">
-          <div>
-            <h2 class="city-option">${cityName}</h2>
-            <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
-          </div>
-          <div>
-            <div class="time">${cityTime.format(
-              "h:mm:ss"
-            )}<small>${cityTime.format("A")}</small</div></div>
-          
-    
-        `;
-  setInterval(updateCity, 1000);
+  citiesElement.innerHTML += ` 
+  <div class="city">
+    <div>
+      <h2 class="city-option">${cityName}</h2>
+      <div class="date">${cityDate}</div>
+    </div>
+    <div>
+      <div class="time">${cityTime}</div>
+    </div>
+          `;
 }
 
 updateTime();
