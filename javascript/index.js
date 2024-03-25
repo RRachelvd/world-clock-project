@@ -51,6 +51,10 @@ function updateCity(event) {
   }
 
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
+
+  if (cityName === "Argentina") {
+    cityName = "Buenos Aires";
+  }
   let cityDate = moment().tz(cityTimezone).format("MMMM Do YYYY");
   let cityTime = moment()
     .tz(cityTimezone)
